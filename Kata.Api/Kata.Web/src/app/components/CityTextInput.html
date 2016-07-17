@@ -1,0 +1,32 @@
+
+<div style="display: inline;">
+    <span style="display: inline;">
+        <input class="textInput"     style='display: inline;width: 59%'
+               ng-class="{'edit': $ctrl.editing, 'new-todo': $ctrl.newTodo}"
+               ng-model="$ctrl.name"              
+               ng-blur="$ctrl.handleBlur()"
+               placeholder="{{$ctrl.placeholder}}"
+               type="text" />
+
+    </span>
+    <span style="display: inline;">
+        <input placeholder="Country" style='display: inline;width: 40%'
+               ng-blur="$ctrl.handleBlur()"
+               ng-model="$ctrl.country"
+               ng-class="{'edit': $ctrl.editing, 'new-todo': $ctrl.newTodo}"
+               ng-keypress="$ctrl.handleSubmit($event)"
+               class="textInput"
+               type="text" />
+
+    </span>   
+</div>
+<div>
+    <input placeholder="Attractions (ie: pool darts cars)"
+           ng-blur="$ctrl.handleBlur()"
+           ng-model="$ctrl.attractions"
+           ng-class="{'edit': $ctrl.editing, 'new-todo': $ctrl.newTodo}"
+           ng-keypress="$ctrl.handleSubmit($event)"
+           class="textInput"
+           type="text" />
+
+</div>

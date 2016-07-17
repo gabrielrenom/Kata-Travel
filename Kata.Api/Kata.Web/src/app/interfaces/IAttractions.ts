@@ -1,0 +1,4 @@
+﻿
+interface IAttractions {
+    name: string;
+}
